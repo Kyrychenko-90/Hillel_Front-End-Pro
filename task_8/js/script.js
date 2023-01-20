@@ -23,7 +23,7 @@
 
 const yearOfBirth = prompt('Введіть свій рік народження');
 
-let year
+let year;
 
 switch (yearOfBirth && String(+yearOfBirth)) {
     case null:
@@ -39,10 +39,12 @@ switch (yearOfBirth && String(+yearOfBirth)) {
         year = 2023 - yearOfBirth;
 }
 
-year === undefined || null ? year = '' : year = `Тобі ${year}`;
+year === undefined ? year = '' : year = `Тобі ${year}`;
 
 const city = prompt('В якому місті Ви живете?');
-let capital
+
+let capital;
+
 switch (city) {
     case null:
         alert('Шкода, що Ви не захотіли ввести своє місто');
@@ -62,10 +64,12 @@ switch (city) {
     default:
         capital = `Ти живеш у місті ${city}`;
 }
-capital === undefined || null ? capital = '' : capital;
+capital === undefined ? capital = '' : capital;
 
 let sport = prompt('Ваш улюблений вид спорту?');
-let athlete
+
+let athlete;
+
 switch (sport) {
     case null:
         alert('Шкода, що Ви не захотіли ввести свій улюблений вид спорту');
@@ -83,9 +87,9 @@ switch (sport) {
         athlete = 'Круто! Хочеш стати Джеймсом?';
         break;
     default:
-        athlete = `${sport} чудовий вид спорту`;
+        athlete = `Ви обрали ${sport}`;
 }
 
-athlete === undefined || null ? athlete = '' : athlete;
+athlete === undefined ? athlete = '' : athlete;
 
 alert(`${year} \n${capital} \n${athlete}`);
