@@ -66,7 +66,7 @@ switch (city) {
 }
 capital === undefined ? capital = '' : capital;
 
-let sport = prompt('Ваш улюблений вид спорту?');
+const sport = prompt('Ваш улюблений вид спорту?');
 
 let athlete;
 
