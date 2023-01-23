@@ -1,10 +1,10 @@
 // Написати цикли, які зможуть:
 // 1. Вивести на сторінку в один рядок через кому числа від 10 до 20.
-
+let numberOne = '';
 for (let i = 10; i <= 20; i++){
-    console.log(i);
+    numberOne += i + ',';
 }
-
+console.log(numberOne.slice(0, -1));
 // 2. Вивести квадрати чисел від 10 до 20.
 
 for (let i = 10; i <= 20; i++){
@@ -13,8 +13,10 @@ for (let i = 10; i <= 20; i++){
 
 // 3. Вивести таблицю множення на 7.
 
-for (let i = 1; i <= 10; i++){
-    console.log(i * 7);
+for (let i = 7; i <= 7; i++){
+    for (let j = 1; j <= 10; j++){
+        console.log(`${i} * ${j} = ${i * j}`);
+    }
 }
 
 // 4. Знайти суму всіх цілих чисел від 1 до 15.
@@ -92,10 +94,9 @@ console.log(numberSum);
 
 // 12. Надрукувати повну таблицю множення від 1 до 10.
 
-let resultTable = 0;
 for (let i = 1; i <= 10; i++){
+    console.log(` x${i}`);
     for (let j = 1; j <= 10; j++){
-        resultTable = i * j;
-        console.log(resultTable);
+        console.log(`${i} * ${j} = ${i * j}`);
     }
 }
