@@ -3,15 +3,15 @@
 //  Видалити елементи з масиву з 2 по 4 (включно!).
 //  У міру змін виводити вміст масиву на сторінку.
 
-const myAray = [4, 14, 12, 27, 2, 37, 8];
-console.log(myAray);
+const myArray = [4, 14, 12, 27, 2, 37, 8];
+console.log(myArray);
 
 function itemsSort (a, b) {
     return a - b ;
 }
 
-myAray.sort(itemsSort)
-console.log(myAray);
+myArray.sort(itemsSort)
+console.log(myArray);
 
-myAray.splice(1,3);
-console.log(myAray);
+myArray.splice(1,3);
+console.log(myArray);
