@@ -58,18 +58,13 @@ let users = [
     }
 ]
 
-users[0].balance = users[0].balance.replace(/,/g, '');
-users[1].balance = users[1].balance.replace(/,/g, '');
-users[2].balance = users[2].balance.replace(/,/g, '');
-users[3].balance = users[3].balance.replace(/,/g, '');
-users[4].balance = users[4].balance.replace(/,/g, '');
-users[5].balance = users[5].balance.replace(/,/g, '');
-users[0].balance = users[0].balance.slice(1);
-users[1].balance = users[1].balance.slice(1);
-users[2].balance = users[2].balance.slice(1);
-users[3].balance = users[3].balance.slice(1);
-users[4].balance = users[4].balance.slice(1);
-users[5].balance = users[5].balance.slice(1);
+users.forEach((elem) => {
+    elem.balance = elem.balance.replace(/,/g, '');
+})
+
+users.forEach((elem) => {
+    elem.balance = elem.balance.slice(1);
+})
 
 const overBalanceUsers = users.filter((elem) => {
     return elem.balance > 2000.00;
