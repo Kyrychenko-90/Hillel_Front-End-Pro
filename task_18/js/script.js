@@ -74,3 +74,18 @@ terribleArray();
 //          'func(" hello world", ['l', 'd'])' поверне нам "heo wor". Вихідний рядок та символи
 //          для видалення задає користувач.
 
+str = prompt('Введіть щось');
+const arrayLength = +prompt("Введіть кількість елементів для видалення.");
+let str2 = [];
+for (let i = 1; i <= arrayLength; i++){
+    const elem = prompt(`Ведіть елемент ${i} для видалення`);
+    str2.push(elem);
+}
+str2 = str2.join(" ");
+
+function newStr(one, two) {
+    const strDel = new RegExp(two, 'g');
+    one = one.replace(strDel , ' ');
+    return alert(one);
+}
+newStr(str, str2)
