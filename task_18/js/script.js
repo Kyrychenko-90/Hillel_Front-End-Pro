@@ -85,7 +85,7 @@ str2 = str2.join(" ");
 
 function newStr(one, two) {
     const strDel = new RegExp(two, 'g');
-    one = one.replace(strDel , ' ');
+    one = one.replace(strDel , '');
     return alert(one);
 }
 newStr(str, str2)
