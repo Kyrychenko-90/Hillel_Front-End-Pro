@@ -94,8 +94,8 @@ console.log(str);
 console.log(str2);
 
 function strDel(array1, array2) {
-    const res = array1.filter(x => array2.includes(x));
-    let oneStr = array1.filter(x => !res.includes(x));
+    const res = array1.filter(elem => array2.includes(elem));
+    let oneStr = array1.filter(elem => !res.includes(elem));
     oneStr = oneStr.join("");
     return alert(oneStr);
 }
