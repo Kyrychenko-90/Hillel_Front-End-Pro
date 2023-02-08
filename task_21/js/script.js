@@ -6,15 +6,16 @@ let ladder = {
     step: 0,
     up: function () {
         this.step++;
-        return this
+        return this;
     },
     down: function () {
         this.step--;
-        return this
+        return this;
     },
     showStep: function () { // показывает текущую ступеньку
-        return alert(this.step);
+        alert(this.step);
+        return this;
     }
 };
 
-ladder.up().up().down().showStep()
+ladder.up().up().down().showStep();
