@@ -4,7 +4,7 @@
 
 function Car() {
     this.startMoving = true;
-    this.stop = true;
+    this.stopMoving = true;
     this.openingDoors = "Стандартное открывание дверей";
 }
 
@@ -19,5 +19,5 @@ const carLamborghini = new Lamborghini();
 carLamborghini.__proto__ = carSedan;
 
 console.log(carLamborghini.startMoving);
-console.log(carLamborghini.stop);
+console.log(carLamborghini.stopMoving);
 console.log(carLamborghini.openingDoors);
