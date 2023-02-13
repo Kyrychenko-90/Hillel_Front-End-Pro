@@ -12,7 +12,6 @@ const carSedan = new Car();
 
 function Lamborghini() {
     this.openingDoors = "Вертикальное открывание дверей";
-
 }
 
 const carLamborghini = new Lamborghini();
