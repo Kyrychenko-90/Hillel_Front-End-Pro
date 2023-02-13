@@ -5,13 +5,13 @@
 function Car() {
     this.startMoving = true;
     this.stop = true;
-    this.openingDoors = "Doors open as standard";
+    this.openingDoors = "Стандартное открывание дверей";
 }
 
 const carSedan = new Car();
 
 function Lamborghini() {
-    this.openingDoors = "Vertical door opening";
+    this.openingDoors = "Вертикальное открывание дверей";
 
 }
 
