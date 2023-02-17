@@ -50,12 +50,12 @@ const tour = {
 
 function jsonStr(strOne) {
     let x
-    if (typeof jsonStr === "string") {
-        x = JSON.parse(strOne);
-    }else {
+    if (typeof strOne === "object") {
         x = JSON.stringify(strOne);
+    }else {
+        x = JSON.parse(strOne);
     }
-    return console.log(x)
+    console.log(x);
 }
 jsonStr(tour);
 
