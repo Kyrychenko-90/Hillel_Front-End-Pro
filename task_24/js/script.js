@@ -63,10 +63,10 @@ jsonStr(tour);
 //          передать JSON строку или обычную строку
 
 function newStr(str) {
-    if (typeof str !== "string") {
-        console.log("true, это JSON строка");
+    if (typeof str === "string") {
+        console.log("true, это обычная строка");
     }else {
-        console.log("false, это обычная строка");
+        console.log("false, это JSON строка");
     }
 }
 newStr("Hello")
