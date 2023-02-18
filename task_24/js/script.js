@@ -2,43 +2,36 @@
 //          чтоб его поприветствовали. Время пользователь хочет вводить строкой в разном формате
 //          например '10 minutes' , '20 seconds', '1 hour', '2 hours'
 
-const name = prompt("Введите свое имя");
-const time = prompt("Введите интервал в формате, например: 10 minutes, 20 seconds, 1 hour, 2 hours");
-const timeArray = time.split(" ",);
-let yourNumberTime = timeArray.slice(0,1);
-let yourTime = timeArray.splice(1,1);
-yourNumberTime = yourNumberTime.join()
-yourTime = yourTime.join();
-
-let interval
-
-switch (yourTime) {
-    case 'second':
-        interval = yourNumberTime * 1000;
-        break;
-    case 'seconds':
-        interval = yourNumberTime * 1000;
-        break;
-    case 'minute':
-        interval = (yourNumberTime / 60) * 1000;
-        break;
-    case 'minutes':
-        interval = (yourNumberTime / 60) * 1000;
-        break;
-    case 'hour':
-        interval = (yourNumberTime / 3600) * 1000;
-        break;
-    case 'hours':
-        interval = (yourNumberTime / 3600) * 1000;
-        break;
-    default:
-        alert("Вы не корректно ввели интервал");
+function sayHi(time, name) {
+    const timeArray = time.split(" ",);
+    let yourNumberTime = timeArray.slice(0,1);
+    let yourTime = timeArray.splice(1,1);
+    yourNumberTime = yourNumberTime.join()
+    yourTime = yourTime.join();
+    let interval
+    switch (yourTime) {
+        case 'second':
+        case 'seconds':
+            interval = yourNumberTime * 1000;
+            break;
+        case 'minute':
+        case 'minutes':
+            interval = (yourNumberTime * 60) * 1000;
+            break;
+        case 'hour':
+        case 'hours':
+            interval = (yourNumberTime * 3600) * 1000;
+            break;
+        default:
+            console.log("Вы не корректно ввели интервал");
+    }
+    setTimeout(function sayHi() {
+        console.log(`Привет ${name}`);
+    }, interval);
 }
-interval = Number(interval);
+sayHi("10 seconds", "Alex")
 
-setTimeout(function helloEverybody(){
-    alert(`Привет ${name}`);
-}, interval);
+
 
 //  2. Создать функцию которая будет или сериализировать или десериализировать объект в зависимости
 //          от того в какой форме он был передан
@@ -63,10 +56,11 @@ jsonStr(tour);
 //          передать JSON строку или обычную строку
 
 function newStr(str) {
-    if (typeof str === "string") {
-        console.log("true, это обычная строка");
-    }else {
-        console.log("false, это JSON строка");
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
     }
+    return true;
 }
-newStr("Hello")
+
