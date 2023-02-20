@@ -20,7 +20,6 @@ class Student {
         this.yearBirth = yearBirth;
         this.ratingsArray = [];
         this.attendance = Array(25).fill(null);
-        this.attendanceCounter = 0;
     }
     age() {
         const today = new Date().getFullYear();
@@ -32,13 +31,11 @@ class Student {
     }
 
     present() {
-        this.attendance[this.attendanceCounter] = true;
-        this.attendanceCounter++;
+        this.attendanceCheck(true);
 
     }
     absent() {
-        this.attendance[this.attendanceCounter] = false;
-        this.attendanceCounter++;
+        this.attendanceCheck(false);
     }
 
     attendanceCheck(check) {
@@ -51,11 +48,6 @@ class Student {
         }
     }
 
-    attendancePercentage() {
-        const attendanceTotal = this.attendance.length;
-        const attendanceEx = this.attendance.filter(Boolean).length;
-        return (attendanceEx / attendanceTotal) * 100;
-    }
     summary() {
         const averageRating = this.averageRating();
         const attendance = this.attendance.filter(Boolean).length;
