@@ -41,12 +41,12 @@ class Car {
         this.year = year;
         this.numberPlate = numberPlate;
     }
-    addOwner(owner) {
-        owner.age > 18 ? this.owner = owner : console.log('Owner must be at least 19 years');
+    addOwner(human) {
+        human.age > 18 ? this.human = human : console.log('Owner must be at least 19 years');
     }
     carInfo() {
         console.log(`Brand: ${this.brand}, Model: ${this.model}, numberPlate: ${this.numberPlate}`);
-        this.owner.humanInfo();
+        this.human.humanInfo();
     }
 }
 
@@ -61,6 +61,7 @@ const car2 = new Car("Lamborghini", "Aventador", 2020, "BM5555AX");
 console.log(car2);
 
 car1.addOwner(human1);
-console.log(car1)
 car2.addOwner(human2);
-console.log(car2)
+
+car1.carInfo();
+car2.carInfo();
