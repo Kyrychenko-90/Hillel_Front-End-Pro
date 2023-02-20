@@ -69,15 +69,24 @@ console.log(`Ім'я: ${student1.firstName}, Прізвище: ${student1.lastNa
 student1.age();
 console.log(`Вік студента ${student1.firstName} ${student1.lastName}: ${student1.age()}`);
 student1.present();
+student1.present();
+student1.present();
+student1.present();
+student1.present();
+
 student1.ratingsArray.push(99, 88, 90, 95, 91, 90, 87, 93, 97, 89);
 console.log(`Середня оцінка студента ${student1.firstName} ${student1.lastName}: ${student1.averageRating()}`)
 student1.summary();
 
 console.log(`Ім'я: ${student2.firstName}, Прізвище: ${student2.lastName}, рік народження: ${student2.yearBirth}`);
-student1.age();
+student2.age();
 console.log(`Вік студента ${student2.firstName} ${student2.lastName}: ${student2.age()}`);
 student2.present();
+student2.present();
+student2.present();
 student2.present()
+student2.absent()
+student2.absent()
 student2.ratingsArray.push(90, 85, 87, 88, 87, 90, 92, 93, 87, 89);
 console.log(`Середня оцінка студента ${student2.firstName} ${student2.lastName}: ${student2.averageRating()}`)
 student2.summary();
