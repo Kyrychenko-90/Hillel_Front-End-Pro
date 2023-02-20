@@ -63,9 +63,9 @@ class Student {
 
 const student1 = new Student("Макс", "Шевченко", 2000);
 const student2 = new Student("Олег", "Іванов", 2001);
+const student3 = new Student("Сергій", "Дроздов", 2002);
 
 console.log(`Ім'я: ${student1.firstName}, Прізвище: ${student1.lastName}, рік народження: ${student1.yearBirth}`);
-
 student1.age();
 console.log(`Вік студента ${student1.firstName} ${student1.lastName}: ${student1.age()}`);
 student1.present();
@@ -73,7 +73,6 @@ student1.present();
 student1.present();
 student1.present();
 student1.present();
-
 student1.ratingsArray.push(99, 88, 90, 95, 91, 90, 87, 93, 97, 89);
 console.log(`Середня оцінка студента ${student1.firstName} ${student1.lastName}: ${student1.averageRating()}`)
 student1.summary();
@@ -90,3 +89,15 @@ student2.absent()
 student2.ratingsArray.push(90, 85, 87, 88, 87, 90, 92, 93, 87, 89);
 console.log(`Середня оцінка студента ${student2.firstName} ${student2.lastName}: ${student2.averageRating()}`)
 student2.summary();
+
+console.log(`Ім'я: ${student3.firstName}, Прізвище: ${student3.lastName}, рік народження: ${student3.yearBirth}`);
+student2.age();
+console.log(`Вік студента ${student3.firstName} ${student3.lastName}: ${student3.age()}`);
+student3.present();
+student3.present();
+student3.present();
+student3.present()
+student3.absent()
+student3.ratingsArray.push(90, 92, 90, 88, 89, 97, 92, 98, 99, 95);
+console.log(`Середня оцінка студента ${student3.firstName} ${student3.lastName}: ${student3.averageRating()}`)
+student3.summary();
