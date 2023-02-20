@@ -20,6 +20,7 @@ class Student {
         this.yearBirth = yearBirth;
         this.ratingsArray = [];
         this.attendance = Array(25).fill(null);
+        this.attendanceCounter = 0;
     }
     age() {
         const today = new Date().getFullYear();
@@ -29,20 +30,31 @@ class Student {
         const sum = this.ratingsArray.reduce((acc, current) => acc + current);
         return sum / this.ratingsArray.length;
     }
+
     present() {
-        this.attendanceCheck(true);
+        this.attendance[this.attendanceCounter] = true;
+        this.attendanceCounter++;
+
     }
     absent() {
-        this.attendanceCheck(false);
+        this.attendance[this.attendanceCounter] = false;
+        this.attendanceCounter++;
     }
+
     attendanceCheck(check) {
         const lastIndex = this.attendance.length - 1;
-        for (let i = 0; i <= lastIndex; i++) {
+        for (let i = 0; i < lastIndex; i++) {
             if(this.attendance[i] === null) {
                 this.attendance[i] = check;
                 return
             }
         }
+    }
+
+    attendancePercentage() {
+        const attendanceTotal = this.attendance.length;
+        const attendanceEx = this.attendance.filter(Boolean).length;
+        return (attendanceEx / attendanceTotal) * 100;
     }
     summary() {
         const averageRating = this.averageRating();
@@ -64,16 +76,16 @@ console.log(`Ім'я: ${student1.firstName}, Прізвище: ${student1.lastNa
 
 student1.age();
 console.log(`Вік студента ${student1.firstName} ${student1.lastName}: ${student1.age()}`);
-
+student1.present();
 student1.ratingsArray.push(99, 88, 90, 95, 91, 90, 87, 93, 97, 89);
 console.log(`Середня оцінка студента ${student1.firstName} ${student1.lastName}: ${student1.averageRating()}`)
 student1.summary();
 
 console.log(`Ім'я: ${student2.firstName}, Прізвище: ${student2.lastName}, рік народження: ${student2.yearBirth}`);
-
 student1.age();
 console.log(`Вік студента ${student2.firstName} ${student2.lastName}: ${student2.age()}`);
-
+student2.present();
+student2.present()
 student2.ratingsArray.push(90, 85, 87, 88, 87, 90, 92, 93, 87, 89);
 console.log(`Середня оцінка студента ${student2.firstName} ${student2.lastName}: ${student2.averageRating()}`)
 student2.summary();
