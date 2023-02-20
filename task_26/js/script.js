@@ -51,14 +51,10 @@ class Car {
 }
 
 const human1 = new Human("Bob", 25);
-console.log(human1);
 const human2 = new Human("Eva", 23);
-console.log(human2);
 
 const car1 = new Car("Porsche", "Panamera", 2021, "CB7777AX");
-console.log(car1);
 const car2 = new Car("Lamborghini", "Aventador", 2020, "BM5555AX");
-console.log(car2);
 
 car1.addOwner(human1);
 car2.addOwner(human2);
