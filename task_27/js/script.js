@@ -50,12 +50,12 @@ class Student {
 
     summary() {
         const averageRating = this.averageRating();
-        const attendance = this.attendance.filter(Boolean).length;
-        const attendanceRating = attendance / this.attendance.length;
+        const attendance = this.attendance.filter((elem) => elem != null && elem === true).length;
+        const attendanceRating = (attendance / this.attendance.filter((elem) => elem != null).length) * 100;
 
-        if(averageRating > 90 && attendanceRating > 0.9) {
+        if(averageRating > 90 && attendanceRating > 90) {
             console.log("Молодець!");
-        }else if(averageRating > 90 || attendanceRating > 0.9) {
+        }else if(averageRating > 90 || attendanceRating > 90) {
             console.log("Добре, але можна краще");
         }else console.log("Редиска!");
     }
