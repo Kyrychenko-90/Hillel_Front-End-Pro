@@ -50,8 +50,8 @@ class Student {
 
     summary() {
         const averageRating = this.averageRating();
-        const attendance = this.attendance.filter((elem) => elem != null && elem === true).length;
-        const attendanceRating = (attendance / this.attendance.filter((elem) => elem != null).length) * 100;
+        const attendance = this.attendance.filter((elem) => elem !== null && elem === true).length;
+        const attendanceRating = (attendance / this.attendance.filter((elem) => elem !== null).length) * 100;
 
         if(averageRating > 90 && attendanceRating > 90) {
             console.log("Молодець!");
@@ -73,7 +73,7 @@ student1.present();
 student1.present();
 student1.present();
 student1.present();
-student1.ratingsArray.push(99, 88, 90, 95, 91, 90, 87, 93, 97, 89);
+student1.ratingsArray.push(99, 88, 90, 95, 91);
 console.log(`Середня оцінка студента ${student1.firstName} ${student1.lastName}: ${student1.averageRating()}`)
 student1.summary();
 
@@ -85,8 +85,7 @@ student2.present();
 student2.present();
 student2.present()
 student2.absent()
-student2.absent()
-student2.ratingsArray.push(90, 85, 87, 88, 87, 90, 92, 93, 87, 89);
+student2.ratingsArray.push(90, 95, 87, 98, 87);
 console.log(`Середня оцінка студента ${student2.firstName} ${student2.lastName}: ${student2.averageRating()}`)
 student2.summary();
 
@@ -96,8 +95,8 @@ console.log(`Вік студента ${student3.firstName} ${student3.lastName}:
 student3.present();
 student3.present();
 student3.present();
-student3.present()
 student3.absent()
-student3.ratingsArray.push(90, 92, 90, 88, 89, 97, 92, 98, 99, 95);
+student3.absent()
+student3.ratingsArray.push(90, 92, 90, 88, 89);
 console.log(`Середня оцінка студента ${student3.firstName} ${student3.lastName}: ${student3.averageRating()}`)
 student3.summary();
