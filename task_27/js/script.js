@@ -91,7 +91,7 @@ console.log(`Середня оцінка студента ${student2.firstName} 
 student2.summary();
 
 console.log(`Ім'я: ${student3.firstName}, Прізвище: ${student3.lastName}, рік народження: ${student3.yearBirth}`);
-student2.age();
+student3.age();
 console.log(`Вік студента ${student3.firstName} ${student3.lastName}: ${student3.age()}`);
 student3.present();
 student3.present();
