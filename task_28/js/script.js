@@ -24,7 +24,7 @@ returnDate(1677231208631);
 //  3.Создать функцию которая принимает миллисекунды и вернет количество времени
 //      которое прошло или должно пройти с текущего момента.
 
-function lastDate(mSec3) {
+const lastDate = (mSec3) => {
     const yourDate = new Date(mSec3);
     const today = new Date();
     const difference = yourDate.getTime() - today.getTime();
