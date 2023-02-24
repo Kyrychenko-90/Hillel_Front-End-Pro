@@ -17,9 +17,9 @@ const returnDate = (mSec2) => {
     const year = yourDate.getFullYear();
     const hour = yourDate.getHours().toString().padStart(2, "0");
     const minutes = yourDate.getMinutes().toString().padStart(2, "0");
-    return console.log(`${date}.${month}.${year} ${hour}:${minutes}`);
+    return `${date}.${month}.${year} ${hour}:${minutes}`;
 }
-returnDate(1677231208631);
+console.log(returnDate(1677231208631));
 
 //  3.Создать функцию которая принимает миллисекунды и вернет количество времени
 //      которое прошло или должно пройти с текущего момента.
@@ -29,6 +29,6 @@ const lastDate = (mSec3) => {
     const today = new Date();
     const difference = yourDate.getTime() - today.getTime();
     const differenceSec = Math.floor(difference / 1000);
-    return differenceSec > 0 ? console.log(`Прошло уже ${differenceSec} секунд`) : console.log(` Должно пройти еще ${Math.abs(differenceSec)} секунд`);
+    return differenceSec > 0 ? `Прошло уже ${differenceSec} секунд` : `Должно пройти еще ${Math.abs(differenceSec)} секунд`;
 }
-lastDate(1677231208631);
+console.log(lastDate(1677231208631));
