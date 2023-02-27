@@ -9,8 +9,6 @@
  */
 
 class SuperMath {
-    constructor() {
-    }
     check(obj) {
         const {X, Y, znak} = obj;
 
