@@ -48,9 +48,9 @@ class SuperMath {
             case '-':
                 return X - Y;
             case '/':
-                return X * Y;
-            case '*':
                 return X / Y;
+            case '*':
+                return X * Y;
             case '%':
                 return X % Y;
             default:
