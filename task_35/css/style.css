@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+}
+
+.form__enter {
+    margin-left: 20px;
+}
+
+#form__square {
+    width: 100px;
+    height: 100px;
+    background-color: #82b572;
+    margin-left: 50px;
+}
