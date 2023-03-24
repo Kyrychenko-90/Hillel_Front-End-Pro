@@ -1,0 +1,22 @@
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+.tableHome {
+    color: #5e1316;
+    font-size: 24px;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tableHomeTr {
+    border: 2px solid #000000;
+}
+
+.tableHomeTd {
+    border: 2px solid #000000;
+    padding: 10px;
+}
+
