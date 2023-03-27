@@ -6,9 +6,9 @@
            4. При досягненні останнього зображення - ховати кнопку Next. Аналогічно з першим зображенням і кнопкою Prev.
 */
 
+const imagesSlider = document.querySelectorAll(".slider-image");
 const btmPrev = document.getElementById("slider_btm-prev");
 const btmNext = document.getElementById("slider_btm-next");
-const imagesSlider = document.querySelectorAll(".slider-image");
 
 let currentIndex = 0;
 

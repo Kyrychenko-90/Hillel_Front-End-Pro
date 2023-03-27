@@ -3,14 +3,25 @@
     margin: 0;
 }
 
+.body {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #d7ded7;
+}
+
 .slider {
+    max-width: 1024px;
+    margin: 0 auto;
     position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 .slider-image {
     display: none;
-    width: 100%;
-    height: auto;
+    border-radius: 4%;
 }
 
 .slider-image:first-child {
@@ -22,8 +33,12 @@
     top: 50%;
     transform: translateY(-50%);
     border: none;
-    font-size: 32px;
+    border-radius: 50%;
+    font-size: 24px;
+    padding: 12px;
     cursor: pointer;
+    background-color: #ffffff;
+    color: #0a440a;
 }
 
 #slider_btm-prev {
