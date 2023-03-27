@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider-image {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.slider-image:first-child {
+    display: block;
+}
+
+.btm {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+#slider_btm-prev {
+    left: 0;
+    display: none;
+}
+
+#slider_btm-next {
+    right: 0;
+}
