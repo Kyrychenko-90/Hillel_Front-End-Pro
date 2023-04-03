@@ -1,10 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-$END$
+<body class="body">
+    <div class="box">
+        <div class="box-form">
+            <form class="form" action="#" method="post">
+                <label class="form-label" for="first-name">First name:</label>
+                <input class="form-input" type="text" id="first-name" name="first-name" required autofocus>
+
+                <label class="form-label" for="last-name">Last name:</label>
+                <input class="form-input" type="text" id="last-name" name="last-name" required>
+
+                <p class="form-text">Gender?:</p>
+                <label>
+                    Male
+                    <input class="form-square" type="radio" name="gender" value="male">
+                </label>
+                <label>
+                    Female
+                    <input class="form-square" type="radio" name="gender" value="female">
+                </label>
+                <label class="form-label" for="city">City:</label>
+                <select class="form-select" id="city" name="city">
+                    <option value="london">London</option>
+                    <option value="paris">Paris</option>
+                    <option value="madrid">Madrid</option>
+                </select>
+
+                <label class="form-label" for="address">Address:</label>
+                <textarea class="form-textarea" id="address" name="address"></textarea>
+
+                <p class="form-text">Languages:</p>
+                <label>
+                    English
+                    <input class="form-square" type="checkbox" name="language" value="English">
+                </label>
+                <label>
+                    French
+                    <input class="form-square" type="checkbox" name="language" value="French">
+                </label>
+                <label>
+                    Spanish
+                    <input class="form-square" type="checkbox" name="language" value="Spanish">
+                </label>
+                <div class="box-btm">
+                    <button id="btm" type="submit">Save</button>
+                </div>
+            </form>
+        </div>
+        <div class="box-table">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>First name</td>
+                        <td id="table_first-name"></td>
+                    </tr>
+                    <tr>
+                        <td>Last name</td>
+                        <td id="table_last-name"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td id="table-gender"></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td id="table-city"></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td id="table-address"></td>
+                    </tr>
+                    <tr>
+                        <td>Language</td>
+                        <td id="table-language"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
