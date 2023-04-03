@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.body {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.box {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #f5f1f1;
+}
+
+.box-catalog {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 20%;
+    background-color: rgba(22, 22, 23, 0.8);
+}
+
+.box-catalog__title {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 32px;
+    color: #ffffff
+}
+
+.box-catalog__list {
+    list-style: none;
+    padding: 0;
+}
+
+.box-catalog__item {
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.box-product {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    background-color: rgba(22, 22, 23, 0.8);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.box-product__title {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 32px;
+    color: #ffffff
+}
+
+#box-product__list-01 {
+    display: none;
+}
+
+#box-product__list-02 {
+    display: none;
+}
+
+#box-product__list-03 {
+    display: none;
+}
+
+#box-product__list-04 {
+    display: none;
+}
+
+.box-product__list {
+    list-style: none;
+    padding: 0;
+}
+
+.box-product__item {
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.box-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: rgba(22, 22, 23, 0.8);
+}
+
+.box-description__title {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 32px;
+    color: #ffffff
+}
+
+.box-description__text {
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #000000;
+    position: relative;
+    display: none;
+    padding: 16px;
+}
+
+#box-description__btm {
+    display: none;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #ffffff;;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+    height: 60px;
+    margin-top: 90px
+}
+
+
+
