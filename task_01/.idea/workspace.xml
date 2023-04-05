@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="416710ff-6324-404a-b35c-98b1f5271a35" name="Changes" comment="" />
+    <list default="true" id="416710ff-6324-404a-b35c-98b1f5271a35" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../task_1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_1/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_14/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../task_14/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_2/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3/.idea/task_3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_4/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_4/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_5/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_5/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_6/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_6/.idea/task_6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_6/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_6/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_6/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_7/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_7/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_7/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_8/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_8/.idea/task_8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_8/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_8/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_8/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_9/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_9/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_9/.idea/task_9.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_9/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_9/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_9/js/script.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1673554843593</updated>
       <workItem from="1673554845232" duration="606000" />
+      <workItem from="1679258569026" duration="153000" />
     </task>
     <servers />
   </component>

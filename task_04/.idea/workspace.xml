@@ -2,7 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56cc4964-fb69-45e8-bacc-89ea7d6c0a6e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../task_5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_14/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../task_14/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_4/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_4/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_5/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_5/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_6/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_6/.idea/task_6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_6/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_6/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_6/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_7/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_7/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_7/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_8/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_8/.idea/task_8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_8/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_8/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_8/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_9/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_9/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_9/.idea/task_9.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_9/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_9/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_9/js/script.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +83,7 @@
       <updated>1673701814744</updated>
       <workItem from="1673701816464" duration="755000" />
       <workItem from="1673807774560" duration="166000" />
+      <workItem from="1679259197905" duration="72000" />
     </task>
     <servers />
   </component>
