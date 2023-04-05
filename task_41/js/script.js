@@ -16,7 +16,7 @@ const catalogItemsCount = catalogItems.length;
 
 let currentDescription;
 
-catalogItems.forEach(function(catalogItem, index) {
+catalogItems.forEach((catalogItem, index) => {
     catalogItem.addEventListener("click", () => {
         for (let i = 0; i < catalogItemsCount; i++) {
             if (i !== index) {
@@ -27,7 +27,7 @@ catalogItems.forEach(function(catalogItem, index) {
     });
 });
 
-productLists.forEach(function(productList) {
+productLists.forEach((productList) => {
     productList.addEventListener("click", (event) => {
         const productItem = event.target.closest('.box-product__item');
         if (productItem) {
@@ -43,10 +43,10 @@ productLists.forEach(function(productList) {
 });
 
 buyButton.addEventListener("click", () => {
-    productLists.forEach(function(productList) {
+    productLists.forEach((productList) => {
         productList.style.display = "none";
     });
-    descriptions.forEach(function(description) {
+    descriptions.forEach((description) => {
         description.style.display = "none";
     });
     buyButton.style.display = "none";
