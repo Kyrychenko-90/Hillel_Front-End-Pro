@@ -27,12 +27,9 @@ catalogItems.forEach(function(catalogItem, index) {
     });
 });
 
-
-
 productLists.forEach(function(productList) {
     productList.addEventListener("click", (event) => {
         const productItem = event.target.closest('.box-product__item');
-
         if (productItem) {
             const productListIndex = Array.from(productLists).indexOf(productList);
             for (let j = 0; j < descriptions.length; j++) {
@@ -41,8 +38,6 @@ productLists.forEach(function(productList) {
             currentDescription = descriptions[productListIndex * 4 + Array.from(productList.children).indexOf(productItem)];
             currentDescription.style.display = "block";
             buyButton.style.display = "block";
-
-
         }
     });
 });
@@ -57,11 +52,6 @@ buyButton.addEventListener("click", function() {
     buyButton.style.display = "none";
     boxForm.style.display = "block";
 });
-
-
-
-
-
 
 const form = document.querySelector('.box2-form');
 const tableName = document.querySelector('#table_name');
@@ -86,8 +76,6 @@ form.addEventListener('submit', function (event) {
     boxForm.style.display = 'none';
     boxTable.style.display = 'flex';
 });
-
-
 
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("section2").addEventListener("submit", function(event) {
