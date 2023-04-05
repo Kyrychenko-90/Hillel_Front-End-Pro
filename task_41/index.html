@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="body">
+    <section class="box">
+        <div class="box-catalog">
+            <h2 class="box-catalog__title">Catalog</h2>
+            <ul class="box-catalog__list">
+                <li id="box-catalog__item-01" class="box-catalog__item">Mac</li>
+                <li id="box-catalog__item-02" class="box-catalog__item">iPad</li>
+                <li id="box-catalog__item-03" class="box-catalog__item">iPhone</li>
+                <li id="box-catalog__item-04" class="box-catalog__item">AirPods</li>
+            </ul>
+        </div>
+        <div class="box-product">
+            <h2 class="box-product__title">Product</h2>
+            <ul id="box-product__list-01" class="box-product__list">
+                <li class="box-product__item">MacBook Air</li>
+                <li class="box-product__item">MacBook Pro 13</li>
+                <li class="box-product__item">MacBook Pro 14</li>
+                <li class="box-product__item">MacBook Pro 16</li>
+            </ul>
+            <ul id="box-product__list-02" class="box-product__list">
+                <li class="box-product__item">iPad 9th</li>
+                <li class="box-product__item">iPad mini</li>
+                <li class="box-product__item">iPad Air</li>
+                <li class="box-product__item">iPad Pro</li>
+            </ul>
+            <ul id="box-product__list-03" class="box-product__list">
+                <li class="box-product__item">iPhone 13</li>
+                <li class="box-product__item">iPhone 14</li>
+                <li class="box-product__item">iPhone 14 Pro</li>
+                <li class="box-product__item">iPhone 14 Pro Max</li>
+            </ul>
+            <ul id="box-product__list-04" class="box-product__list">
+                <li class="box-product__item">AirPods 2rd</li>
+                <li class="box-product__item">AirPods 3rd</li>
+                <li class="box-product__item">AirPods Pro</li>
+                <li class="box-product__item">AirPods Max</li>
+            </ul>
+        </div>
+        <div class="box-description">
+            <h2 class="box-description__title">Description</h2>
+            <p id="box-description__text-01" class="box-description__text">MacBook Air Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, nulla?</p>
+            <p id="box-description__text-02" class="box-description__text">MacBook Pro 13 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ipsam.</p>
+            <p id="box-description__text-03" class="box-description__text">MacBook Pro 14 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, hic.</p>
+            <p id="box-description__text-04" class="box-description__text">MacBook Pro 16 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, ipsam.</p>
+            <p id="box-description__text-05" class="box-description__text">iPad 9th Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, quam?</p>
+            <p id="box-description__text-06" class="box-description__text">iPad mini Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ut.</p>
+            <p id="box-description__text-07" class="box-description__text">iPad Air Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, voluptas.</p>
+            <p id="box-description__text-08" class="box-description__text">iPad Pro Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, qui.</p>
+            <p id="box-description__text-09" class="box-description__text">iPhone 13 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, quibusdam?</p>
+            <p id="box-description__text-10" class="box-description__text">iPhone 14 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quod.</p>
+            <p id="box-description__text-11" class="box-description__text">iPhone 14 Pro Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, sint!</p>
+            <p id="box-description__text-12" class="box-description__text">iPhone 14 Pro Max Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, vel.</p>
+            <p id="box-description__text-13" class="box-description__text">AirPods 2rd Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, enim!</p>
+            <p id="box-description__text-14" class="box-description__text">AirPods 3rd Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, reprehenderit!</p>
+            <p id="box-description__text-15" class="box-description__text">AirPods Pro Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, voluptatem.</p>
+            <p id="box-description__text-16" class="box-description__text">AirPods Max Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, eligendi!</p>
+            <button id="box-description__btm"><a href="#section2">Buy</a></button>
+        </div>
+    </section>
+    <section class="box2">
+        <div class="box2-description">
+            <form id="section2" class="box2-form" action="#" method="post" novalidate>
+                <label for="name">ФИО:*</label>
+                <input class="box2-form_name" type="text" id="name" name="name" required><br><br>
+
+                <label for="city">Город:*</label>
+                <select class="box2-form-city" id="city" name="city" required>
+                    <option value="">Выберите город</option>
+                    <option value="Киев">Киев</option>
+                    <option value="Харьков">Харьков</option>
+                    <option value="Одесса">Одесса</option>
+                    <option value="Днепр">Днепр</option>
+                </select><br><br>
+
+                <label for="nova-poshta">Склад Новой почты:*</label>
+                <input class="box2-form_nova-poshta" type="text" id="nova-poshta" name="nova-poshta" required><br><br>
+
+                <p class="box2-form_pay">Способ оплаты:*</p>
+                <label class="box2-form_swap">
+                    Наложенный платеж
+                    <input class="box2-form__radio" type="radio" name="payment" value="cash-on-delivery" checked>
+                </label>
+                <label class="box2-form_swap">
+                    Банковская карта
+                    <input class="box2-form__radio" type="radio" name="payment" value="credit-card">
+                </label>
+                <div>
+                    <label  for="quantity">Количество продукции:*</label>
+                    <input class="box2-form_quantity" type="number" id="quantity" name="quantity" value="1" min="1">
+                </div>
+                <label for="comment">Комментарий:*</label>
+                <textarea class="box2-form_comment" id="comment" name="comment" required></textarea>
+                <button class="box2-form_btm" type="submit">Оформить заказ</button>
+            </form>
+        </div>
+        <div class="box2-check">
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td>ФИО</td>
+                    <td id="table_name"></td>
+                </tr>
+                <tr>
+                    <td>Город</td>
+                    <td id="table_city"></td>
+                </tr>
+                <tr>
+                    <td>Адресс Новой Почты</td>
+                    <td id="table_nova-poshta"></td>
+                </tr>
+                <tr>
+                    <td>Способ оплаты</td>
+                    <td id="table_payment"></td>
+                </tr>
+                <tr>
+                    <td>Количество продукции</td>
+                    <td id="table_quantity"></td>
+                </tr>
+                <tr>
+                    <td>Комментарий</td>
+                    <td id="table_comment"></td>
+                </tr>
+                <tr>
+                    <td>Информация о товаре</td>
+                    <td id="table_product"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>
