@@ -17,7 +17,7 @@ const catalogItemsCount = catalogItems.length;
 let currentDescription;
 
 catalogItems.forEach(function(catalogItem, index) {
-    catalogItem.addEventListener("click", function() {
+    catalogItem.addEventListener("click", () => {
         for (let i = 0; i < catalogItemsCount; i++) {
             if (i !== index) {
                 productLists[i].style.display = "none";
@@ -42,7 +42,7 @@ productLists.forEach(function(productList) {
     });
 });
 
-buyButton.addEventListener("click", function() {
+buyButton.addEventListener("click", () => {
     productLists.forEach(function(productList) {
         productList.style.display = "none";
     });
@@ -64,7 +64,7 @@ const tableProduct = document.querySelector('#table_product');
 const boxForm = document.querySelector('.box2-description');
 const boxTable = document.querySelector('.box2-check');
 
-form.addEventListener('submit', function (event) {
+form.addEventListener('submit', (event) => {
     event.preventDefault();
     tableName.textContent = form.elements.name.value;
     tableCity.textContent = form.elements.city.value;
@@ -77,8 +77,8 @@ form.addEventListener('submit', function (event) {
     boxTable.style.display = 'flex';
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("section2").addEventListener("submit", function(event) {
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("section2").addEventListener("submit", (event) => {
         const name = document.getElementById("name").value;
         const city = document.getElementById("city").value;
         const novaPoshta = document.getElementById("nova-poshta").value;
