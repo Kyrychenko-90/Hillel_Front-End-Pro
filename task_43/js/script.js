@@ -149,7 +149,6 @@ const createOrderElement = (orderId, orderData) => {
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-
     const name = form.elements.name.value;
     const city = form.elements.city.value;
     const novaPoshta = form.elements['nova-poshta'].value;
@@ -172,13 +171,9 @@ form.addEventListener('submit', (event) => {
     };
 
     const orderId = Date.now().toString();
-
     localStorage.setItem(orderId, JSON.stringify(order));
-
     const orderElement = createOrderElement(orderId, JSON.stringify(order));
-
     ordersList.appendChild(orderElement);
-
     form.reset();
 });
 

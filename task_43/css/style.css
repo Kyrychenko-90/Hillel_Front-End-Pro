@@ -143,11 +143,6 @@ a {
     margin-top: 90px
 }
 
-
-
-
-
-
 .orders {
     display: none;
     max-width: 1440px;
@@ -190,7 +185,7 @@ a {
 #block-btm {
     font-size: 16px;
     font-weight: bold;
-    background-color: #2a2828;
+    background-color: #000000;
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -200,6 +195,12 @@ a {
     width: 120px;
     height: 60px;
     margin: 20px 0 20px 60px
+}
+
+#block-btm:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
 }
 
 .box2 {
@@ -280,7 +281,6 @@ a {
     background-color: #3e8e41;
 }
 
-
 .box2-check {
     display: none;
     justify-content: center;
@@ -288,7 +288,6 @@ a {
     max-width: 1080px;
     margin-top: 20px;
 }
-
 
 .table {
     width: 100%;
