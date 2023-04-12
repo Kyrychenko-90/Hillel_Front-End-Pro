@@ -143,65 +143,6 @@ a {
     margin-top: 90px
 }
 
-
-
-
-
-
-.orders {
-    display: none;
-    max-width: 1440px;
-    margin: 0 auto;
-    background-color: #f5f1f1;
-}
-
-.orders-list {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    background-color: rgba(22, 22, 23, 0.8);
-    padding: 5px 20px 20px;
-}
-
-.orders-list_title {
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-.created-time {
-    color: #ffffff;
-    cursor: pointer;
-}
-
-.delete-btn {
-    color: #ffffff;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.block {
-    display: flex;
-    max-width: 1440px;
-    margin: 0 auto;
-    background-color: #f5f1f1;
-}
-
-#block-btm {
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #2a2828;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    padding: 6px 12px;
-    text-align: center;
-    cursor: pointer;
-    width: 120px;
-    height: 60px;
-    margin: 20px 0 20px 60px
-}
-
 .box2 {
     display: flex;
     justify-content: center;
