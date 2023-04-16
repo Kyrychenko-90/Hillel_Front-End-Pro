@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="body">
+    <section class="box">
+        <form id="box-form">
+            <label for="postId" class="box-form_id">Enter ID</label>
+            <input type="number" id="postId" min="1" max="100" value="1" required>
+            <button id="box-form_btm" type="submit">Search</button>
+        </form>
+        <div class="box-content">
+            <h2 class="box-content_title"></h2>
+            <p class="box-content_text"></p>
+            <button id="box-content_btm" type="submit">Comments</button>
+        </div>
+        <h2 class="box-title">Comments</h2>
+        <div class="box-comment"></div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>
