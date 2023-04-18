@@ -12,19 +12,22 @@ const contentBtn = document.getElementById("box-content_btm");
 const titleBox = document.querySelector(".box-title");
 const commentBox = document.querySelector(".box-comment");
 
+const API_URL = "https://jsonplaceholder.typicode.com";
+
 const fetchData = async (url) => {
-    const response = await fetch(url);
-    if (!response.ok) {
-        throw new Error('Ошибка: ' + response.status);
+    try {
+        const response = await fetch(url);
+        return await response.json();
+    } catch (error) {
+        console.error('Ошибка:', error);
     }
-    return await response.json();
 };
 
 form.addEventListener('submit', async function(event) {
     event.preventDefault();
     const postId = document.getElementById('postId').value;
     try {
-        const postData = await fetchData(`https://jsonplaceholder.typicode.com/posts/${postId}`);
+        const postData = await fetchData(`${API_URL}/posts/${postId}`);
         titleElement.textContent = postData.title;
         textElement.textContent = postData.body;
         contentBtn.style.display = 'block';
@@ -38,7 +41,7 @@ form.addEventListener('submit', async function(event) {
 contentBtn.addEventListener("click", async () => {
     try {
         const postId = document.getElementById("postId").value;
-        const commentsData = await fetchData(`https://jsonplaceholder.typicode.com/comments?postId=${postId}`);
+        const commentsData = await fetchData(`${API_URL}/comments?postId=${postId}`);
         let commentsHtml = "";
         commentsData.slice(0, 5).forEach(comment => {
             commentsHtml += `

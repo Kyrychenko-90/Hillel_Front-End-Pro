@@ -22,22 +22,24 @@ function getWeather(city) {
             return response.json();
         })
         .then(function(data) {
-            const temp = data.main.temp;
-            const pressure = data.main.pressure;
-            const description = data.weather[0].description;
-            const humidity = data.main.humidity;
-            const speed = data.wind.speed;
-            const deg = data.wind.deg;
-            const iconCode = data.weather[0].icon;
-            const iconUrl = `http://openweathermap.org/img/w/${iconCode}.png`;
-            document.getElementById("city").textContent = `Місто: ${city}`;
-            document.getElementById("temp").textContent = `Температура: ${temp} °C`;
-            document.getElementById("pressure").textContent = `Тиск: ${pressure} гПа`;
-            document.getElementById("description").textContent = `Опис: ${description}`;
-            document.getElementById("humidity").textContent = `Вологість: ${humidity} %`;
-            document.getElementById("speed").textContent = `Швидкість вітру: ${speed} м/с`;
-            document.getElementById("deg").textContent = `Напрямок вітру: ${deg}°`;
+            const {temp, pressure,humidity} = data.main;
+            const {description, icon} = data.weather[0];
+            const {speed, deg} = data.wind;
+            const iconUrl = `http://openweathermap.org/img/w/${icon}.png`;
+
+            const getTextContentById = (elementId, text) => {
+                document.getElementById(elementId).textContent = text;
+            }
+
+            getTextContentById("city", `Місто: ${city}`);
+            getTextContentById("temp", `Температура: ${temp} °C`);
+            getTextContentById("pressure", `Тиск: ${pressure} гПа`);
+            getTextContentById("description", `Опис: ${description}`);
+            getTextContentById("humidity", `Вологість: ${humidity} %`);
+            getTextContentById("speed", `Швидкість вітру: ${speed} м/с`);
+            getTextContentById("deg", `Напрямок вітру: ${deg}°`);
             document.getElementById("icon").setAttribute("src", iconUrl);
+
         })
         .catch(function(error) {
             console.log("Помилка при отриманні даних про погоду:", error);
