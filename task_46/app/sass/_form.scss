@@ -1,0 +1,10 @@
+.form {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    &__enter {
+        margin-left: 20px;
+    }
+}
