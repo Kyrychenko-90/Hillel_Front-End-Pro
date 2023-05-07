@@ -1,0 +1,26 @@
+.holder__card-btm {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.holder__card-btm:hover {
+    background-color: #480a0a;
+}
+
+
+.holder__card-result-title {
+    font-weight: bold;
+    font-size: 36px;
+    color: #5d0d16;
+    margin-bottom: 15px;
+}
+

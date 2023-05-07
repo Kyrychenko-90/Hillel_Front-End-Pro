@@ -1,0 +1,36 @@
+.holder {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #7ecbb9;
+    border-radius: 100px;
+}
+
+.holder__card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.holder__card-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    padding: 16px;
+}
+
+.holder__card-item-img {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.25s;
+}
+
+.holder__card-item-img:hover {
+    transform: scale(1.2);
+}
+
+.holder__card-item-counter {
+    font-size: 32px;
+    color: midnightblue;
+}
