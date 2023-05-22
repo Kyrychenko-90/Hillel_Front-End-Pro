@@ -21,8 +21,8 @@
     list-style: none;
 }
 
-.box__list--users {
-    width: 60%;
+.box__list--albums {
+    width: 100%;
 }
 
 .box__item {
@@ -32,6 +32,8 @@
     border: 3px solid #282c34;
 }
 
-.box__item--users {
-    background-color: #abeeab;
+.box__item--albums {
+    background-color: #99abea;
+    border: none;
+    margin-top: 10px;
 }

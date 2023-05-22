@@ -1,10 +1,19 @@
-import UserList from "./components/UserList";
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import UserList from './components/UserList';
+import AlbumList from './components/AlbumList';
+import PhotoList from './components/PhotoList';
 
 function App() {
   return (
     <div className="App">
-      <UserList />
+        <Router>
+            <Routes>
+                <Route path="/" element={<UserList />} />
+                <Route path="/users/:userId" element={<AlbumList />} />
+                <Route path="/albums/:albumId" element={<PhotoList />} />
+            </Routes>
+        </Router>
     </div>
   );
 }
