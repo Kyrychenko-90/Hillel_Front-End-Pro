@@ -50,6 +50,10 @@ const Form = () => {
         }
     };
 
+    const handleInputChange = () => {
+        setFormSubmitted(false);
+    };
+
     return (
         <div className="form">
             <h1 className="form__title">Forma</h1>
@@ -61,7 +65,10 @@ const Form = () => {
                     <input
                         type="text"
                         value={name}
-                        onChange={(e) => setName(e.target.value)}
+                        onChange={(e) => {
+                            setName(e.target.value);
+                            handleInputChange();
+                        }}
                     />
                 </label>
                 <br />
@@ -71,7 +78,10 @@ const Form = () => {
                     <input
                         type="text"
                         value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        onChange={(e) => {
+                            setEmail(e.target.value);
+                            handleInputChange();
+                        }}
                     />
                 </label>
                 <br />
@@ -81,7 +91,10 @@ const Form = () => {
                     <input
                         type="tel"
                         value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
+                        onChange={(e) => {
+                            setPhone(e.target.value);
+                            handleInputChange();
+                        }}
                     />
                 </label>
                 <br />
