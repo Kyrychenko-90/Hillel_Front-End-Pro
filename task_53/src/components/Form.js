@@ -10,6 +10,12 @@ const Form = () => {
     const [phoneError, setPhoneError] = useState("");
     const [formSubmitted, setFormSubmitted] = useState(false);
 
+    const formArray = [
+        { label: "Ім'я:", value: name, error: nameError, onChange: (e) => { setName(e.target.value); handleInputChange(); } },
+        { label: "Email:", value: email, error: emailError, onChange: (e) => { setEmail(e.target.value); handleInputChange(); } },
+        { label: "Телефон:", value: phone, error: phoneError, onChange: (e) => { setPhone(e.target.value); handleInputChange(); } }
+    ];
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -59,44 +65,13 @@ const Form = () => {
             <h1 className="form__title">Forma</h1>
             {formSubmitted && <p className = "form__done">Форма успішно відправлена</p>}
             <form onSubmit={handleSubmit}>
-                <label>
-                    {nameError && <p className = "form__error">{nameError}</p>}
-                    Ім'я:
-                    <input
-                        type="text"
-                        value={name}
-                        onChange={(e) => {
-                            setName(e.target.value);
-                            handleInputChange();
-                        }}
-                    />
-                </label>
-                <br />
-                <label>
-                    {emailError && <p className = "form__error">{emailError}</p>}
-                    Email:
-                    <input
-                        type="text"
-                        value={email}
-                        onChange={(e) => {
-                            setEmail(e.target.value);
-                            handleInputChange();
-                        }}
-                    />
-                </label>
-                <br />
-                <label>
-                    {phoneError && <p className = "form__error">{phoneError}</p>}
-                    Телефон:
-                    <input
-                        type="tel"
-                        value={phone}
-                        onChange={(e) => {
-                            setPhone(e.target.value);
-                            handleInputChange();
-                        }}
-                    />
-                </label>
+                {formArray.map((form, index) => (
+                    <label key={index}>
+                        {form.error && <p className="form__error">{form.error}</p>}
+                        {form.label}
+                        <input type={index === 2 ? "tel" : "text"} value={form.value} onChange={form.onChange} />
+                    </label>
+                ))}
                 <br />
                 <button className="form__btm" type="submit">
                     Відправити
