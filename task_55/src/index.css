@@ -21,6 +21,11 @@ body {
   padding: 12px 96px;
 }
 
+.item-list {
+  list-style-type: none;
+  padding: 0;
+}
+
 .item-todo {
   display: flex;
   justify-content: space-between;
@@ -34,21 +39,13 @@ body {
   border-radius: 24px;
 }
 
-.item-text {
-  color: #000000;
-  cursor: pointer;
-}
-
-.item-delete {
-  cursor: pointer;
-  padding: 6px 12px;
-  border-radius: 6px;
-  border: none;
+.App input {
+  padding: 16px;
+  border-radius: 16px;
+  border: 2px solid #15a832;
   outline: none;
-  background: #860707;
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-left: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .btm {
@@ -63,21 +60,14 @@ body {
   margin-left: 10px;
 }
 
-.App input {
-  padding: 16px;
-  border-radius: 16px;
-  border: 2px solid #15a832;
+.btm__delete {
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 12px;
+  border: none;
   outline: none;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-.item-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.strike {
-  color: #106910;
-  text-decoration: line-through;
+  background: #860707;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-left: 10px;
 }

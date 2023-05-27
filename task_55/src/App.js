@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { addTask, removeTask, toggleTask } from './actions';
+import { addTask, removeTask, toggleTask } from './store/actions';
 import "./index.css"
 
 const App = () => {
@@ -45,15 +45,14 @@ const App = () => {
                 {tasks.map((task) => (
                     <li key={task.id}>
             <span className = "item-todo"
-                style={{
-                    textDecoration: task.completed ? 'line-through' : 'none',
-                }}
+                  style={{
+                      background: task.completed ? '#79a830' : '#f8f8b4',
+                  }}
                 onClick={() => handleToggle(task.id)}
             >
               {task.title}
-                <button className = "item-delete" onClick={() => handleRemove(task.id)}>Remove</button>
+                <button className = "btm__delete" onClick={() => handleRemove(task.id)}>Remove</button>
             </span>
-
                     </li>
                 ))}
             </ul>
