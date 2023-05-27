@@ -6,38 +6,28 @@ const ToDoForm = () => {
     const [userInput, setUserInput] = useState('');
     const dispatch = useDispatch();
 
-    const handleChange = (event) => {
-        setUserInput(event.target.value);
+    const handleInputChange = (e) => {
+        setUserInput(e.target.value);
     };
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        if (userInput) {
-            dispatch(addTask({
-                id: Math.random().toString(36).substr(2, 9),
-                task: userInput,
-                complete: false
-            }));
-            setUserInput('');
-        }
-    };
-
-    const handleKeyPress = (event) => {
-        if (event.key === 'Enter') {
-            handleSubmit(event);
-        }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        dispatch(addTask(userInput));
+        setUserInput('');
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
             <input
-                value={userInput}
                 type="text"
-                onChange={handleChange}
-                onKeyDown={handleKeyPress}
-                placeholder="Enter a new task"
+                className="form__input"
+                placeholder="Enter a task..."
+                value={userInput}
+                onChange={handleInputChange}
             />
-            <button className="btm" type="submit">Save</button>
+            <button type="submit" className="form__button">
+                Add Task
+            </button>
         </form>
     );
 };

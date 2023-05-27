@@ -1,25 +1,29 @@
+import { ADD_TASK, REMOVE_TASK, TOGGLE_TASK } from './actions';
+
 const initialState = {
-    todos: []
+    tasks: [],
 };
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'ADD_TASK':
+        case ADD_TASK:
             return {
                 ...state,
-                todos: [...state.todos, action.payload]
+                tasks: [...state.tasks, action.payload],
             };
-        case 'REMOVE_TASK':
+        case REMOVE_TASK:
             return {
                 ...state,
-                todos: state.todos.filter(todo => todo.id !== action.payload)
+                tasks: state.tasks.filter((task) => task.id !== action.payload),
             };
-        case 'TOGGLE_TASK':
+        case TOGGLE_TASK:
             return {
                 ...state,
-                todos: state.todos.map(todo =>
-                    todo.id === action.payload ? { ...todo, complete: !todo.complete } : todo
-                )
+                tasks: state.tasks.map((task) =>
+                    task.id === action.payload
+                        ? { ...task, completed: !task.completed }
+                        : task
+                ),
             };
         default:
             return state;

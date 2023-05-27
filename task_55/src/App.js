@@ -1,48 +1,64 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import ToDo from './components/ToDo';
-import ToDoForm from './components/ToDoForm';
-import { addTaskWithAPI, removeTask, toggleTask } from './actions';
+import { addTask, removeTask, toggleTask } from './actions';
+import "./index.css"
 
-function App() {
-    const todos = useSelector(state => state.todos);
+const App = () => {
+    const tasks = useSelector((state) => state.tasks);
     const dispatch = useDispatch();
+    const [inputValue, setInputValue] = useState('');
 
-    const handleAddTask = (userInput) => {
-        if (userInput) {
-            const newTask = {
-                id: Math.random().toString(36).substr(2, 9),
-                task: userInput,
-                complete: false
-            };
-            dispatch(addTaskWithAPI(newTask));
-        }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (inputValue.trim() === '') return;
+
+        const newTask = {
+            id: Date.now().toString(),
+            title: inputValue,
+            completed: false,
+        };
+
+        dispatch(addTask(newTask));
+        setInputValue('');
     };
 
-    const handleRemoveTask = (id) => {
+    const handleRemove = (id) => {
         dispatch(removeTask(id));
     };
 
-    const handleToggleTask = (id) => {
+    const handleToggle = (id) => {
         dispatch(toggleTask(id));
     };
 
     return (
-        <div className="App">
-            <header className="header">
-                <h1 className="header__title">Task list:</h1>
-            </header>
-            <ToDoForm addTask={handleAddTask} />
-            {todos.map((todo) => (
-                <ToDo
-                    key={todo.id}
-                    todo={todo}
-                    toggleTask={handleToggleTask}
-                    removeTask={handleRemoveTask}
+        <div className = "App">
+            <h1 className = "header__title">To-Do List</h1>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    value={inputValue}
+                    onChange={(e) => setInputValue(e.target.value)}
                 />
-            ))}
+                <button className = "btm" type="submit">Add Task</button>
+            </form>
+            <ul className = "item-list">
+                {tasks.map((task) => (
+                    <li key={task.id}>
+            <span className = "item-todo"
+                style={{
+                    textDecoration: task.completed ? 'line-through' : 'none',
+                }}
+                onClick={() => handleToggle(task.id)}
+            >
+              {task.title}
+                <button className = "item-delete" onClick={() => handleRemove(task.id)}>Remove</button>
+            </span>
+
+                    </li>
+                ))}
+            </ul>
         </div>
     );
-}
+};
 
 export default App;

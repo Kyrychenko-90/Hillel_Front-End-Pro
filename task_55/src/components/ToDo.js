@@ -1,17 +1,22 @@
 import React from 'react';
 
 const ToDo = ({ todo, toggleTask, removeTask }) => {
+    const handleToggle = () => {
+        toggleTask(todo.id);
+    };
+
+    const handleRemove = () => {
+        removeTask(todo.id);
+    };
+
     return (
-        <div key={todo.id} className="item-todo">
-            <div
-                className={todo.complete ? 'item-text strike' : 'item-text'}
-                onClick={() => toggleTask(todo.id)}
-            >
+        <div className={`todo ${todo.complete ? 'complete' : ''}`}>
+            <div className="todo__task" onClick={handleToggle}>
                 {todo.task}
             </div>
-            <div className="item-delete" onClick={() => removeTask(todo.id)}>
-                X
-            </div>
+            <button className="todo__button" onClick={handleRemove}>
+                Remove
+            </button>
         </div>
     );
 };
