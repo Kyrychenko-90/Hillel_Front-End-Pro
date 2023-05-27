@@ -21,12 +21,36 @@ export const addTask = (task) => {
     };
 };
 
-export const removeTask = (id) => ({
-    type: REMOVE_TASK,
-    payload: id,
-});
+export const removeTask = (id) => {
+    return (dispatch) => {
+        axios
+            .delete(`https://64722a276a9370d5a41b1c2a.mockapi.io/todolist/${id}`)
+            .then((response) => {
+                console.log('The task has been successfully removed:', id);
+                dispatch({
+                    type: REMOVE_TASK,
+                    payload: id,
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    };
+};
 
-export const toggleTask = (id) => ({
-    type: TOGGLE_TASK,
-    payload: id,
-});
+export const toggleTask = (id) => {
+    return (dispatch) => {
+        axios
+            .put(`https://64722a276a9370d5a41b1c2a.mockapi.io/todolist/${id}`)
+            .then((response) => {
+                console.log('The task has been successfully toggled:', id);
+                dispatch({
+                    type: TOGGLE_TASK,
+                    payload: id,
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    };
+};

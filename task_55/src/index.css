@@ -14,29 +14,34 @@ body {
   align-items: center;
 }
 
-.header__title {
+.App__title {
   background-color: #6fdc86;
   border-radius: 16px;
   border: 2px solid #15a832;
   padding: 12px 96px;
 }
 
-.item-list {
+.App__list {
   list-style-type: none;
   padding: 0;
 }
 
-.item-todo {
+.App__item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.App__text {
   padding: 16px;
   width: 280px;
   text-align: left;
-  margin-bottom: 20px;
   background: #f8f8b4;
   font-weight: bold;
   border: 2px solid #15a832;
   border-radius: 24px;
+  cursor: pointer;
 }
 
 .App input {
@@ -62,8 +67,8 @@ body {
 
 .btm__delete {
   cursor: pointer;
-  padding: 6px 12px;
-  border-radius: 12px;
+  padding: 12px 24px;
+  border-radius: 24px;
   border: none;
   outline: none;
   background: #860707;

@@ -32,7 +32,7 @@ const App = () => {
 
     return (
         <div className = "App">
-            <h1 className = "header__title">To-Do List</h1>
+            <h1 className = "App__title">To-Do List</h1>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
@@ -41,18 +41,19 @@ const App = () => {
                 />
                 <button className = "btm" type="submit">Add Task</button>
             </form>
-            <ul className = "item-list">
+            <ul className = "App__list">
                 {tasks.map((task) => (
-                    <li key={task.id}>
-            <span className = "item-todo"
+                    <li className = "App__item" key={task.id}>
+            <span className = "App__text"
                   style={{
                       background: task.completed ? '#79a830' : '#f8f8b4',
                   }}
                 onClick={() => handleToggle(task.id)}
             >
               {task.title}
-                <button className = "btm__delete" onClick={() => handleRemove(task.id)}>Remove</button>
+
             </span>
+                        <button className = "btm__delete" onClick={() => handleRemove(task.id)}>Remove</button>
                     </li>
                 ))}
             </ul>
